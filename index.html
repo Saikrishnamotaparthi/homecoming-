@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Coming</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .header {
+            margin-top: 20px;
+        }
+        .header h1 {
+            font-size: 36px;
+            color: #006400;
+        }
+        .header .subtitle {
+            font-size: 18px;
+            color: #ffcc00;
+            text-transform: uppercase;
+        }
+        .stripes {
+            margin: 10px auto;
+            width: 200px;
+            height: 6px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .stripes div {
+            width: 30%;
+            height: 100%;
+        }
+        .stripe1 {
+            background-color: #ff6347;
+        }
+        .stripe2 {
+            background-color: #ffcc00;
+        }
+        .stripe3 {
+            background-color: #00bfff;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .content h2 {
+            font-size: 28px;
+            color: #000000;
+        }
+        .buttons {
+            margin: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #006400;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .counter-section {
+            margin: 20px 0;
+        }
+        .counter-section h3 {
+            font-size: 24px;
+            color: #000000;
+        }
+        .counter-container {
+            display: flex;
+            justify-content: center;
+        }
+        .counter {
+            font-size: 36px;
+            color: #000000;
+            padding: 10px 20px;
+            border: 2px solid #000000;
+            border-radius: 5px;
+            text-align: center;
+            min-width: 80px;
+        }
+        .footer {
+            margin-top: 20px;
+            background-color: #fffacd;
+            padding: 20px;
+        }
+        .footer-logo {
+            font-size: 16px;
+            color: #000000;
+            font-weight: bold;
+        }
+        .footer-logo span {
+            color: #006400;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.postimg.cc/FzFKjsrz/homecoming-logo.jpg" width="350" height="210">        
+    </div>
+
+    <div class="content">
+        <h2>FOOD ENTER</h2>
+        <div class="buttons">
+            <button class="button" onclick="window.open('/scan_camera', '_blank')">SCAN WITH CAMERA</button>
+            <button class="button" onclick="location.href='/scan_scanner'">SCAN WITH SCANNER</button>
+        </div>
+        <div class="counter-section">
+            <h3>NO OF PLATES GIVEN</h3>
+            <div class="counter-container">
+                <div class="counter">{{ plate_count }}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="https://i.postimg.cc/XYbzxGMs/1-prev-ui.png" width="50" height="50">
+            DEVELOPED BY: TEAM G-ELECTRA (<span>SMART SYSTEMS CLUB</span>)
+        </div>
+    </div>
+</body>
+</html>
